@@ -35,6 +35,7 @@ class Feet(float):
 
 if __name__ == "__main__":
     line: str = input("Enter a temperature or a length: ")
+    value: Fahrenheit | Celsius | Feet | Meters
     if line[-1] in "Ff":
         value = Fahrenheit(float(line[:-1]))
         print(f"{value}F = {value.to_celsius()}C")
